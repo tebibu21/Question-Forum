@@ -26,6 +26,8 @@ const answerRoutes = require("./routes/answerRoute");
 // middleware
 app.use(express.json());
 
+app.use(express.urlencoded({ extended: true }));
+
 // register route files
 app.use("/api/users", userRoutes);
 app.use("/api/questions", authMiddleware, questionRoutes);

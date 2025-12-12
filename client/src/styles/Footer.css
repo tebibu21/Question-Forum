@@ -1,0 +1,79 @@
+/* ============ FOOTER BASE ============ */
+.footer {
+  background: #1e2a38;
+  color: #d7dde4;
+  padding: 40px 0 20px;
+  margin-top: 40px;
+}
+
+/* ============ FOOTER CONTAINER ============ */
+.footer-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* ============ SECTIONS ============ */
+.footer-section {
+  flex: 1 1 250px;
+}
+
+.footer-title {
+  font-size: 1.6rem;
+  color: #f5f7fa;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.footer-desc {
+  color: #bfc6d0;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-subtitle {
+  color: #f5f7fa;
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+/* ============ LINKS ============ */
+.footer-link {
+  display: block;
+  color: #d7dde4;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.25s ease, transform 0.2s;
+}
+
+.footer-link:hover {
+  color: #4c8bf5;
+  transform: translateX(4px);
+}
+
+/* ============ BOTTOM SECTION ============ */
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #9aa5b1;
+  font-size: 0.9rem;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .footer-container {
+    text-align: center;
+  }
+
+  .footer-link:hover {
+    transform: none;
+  }
+}

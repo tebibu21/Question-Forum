@@ -1,0 +1,61 @@
+/* Container for the entire Home component */
+.home-container {
+  padding: 20px 10%; /* Add padding around the content, adjust percentage as needed */
+  max-width: 1200px;
+  margin: 0 auto; /* Center the container */
+}
+
+/* Header section containing the Ask Question button and Welcome message */
+.home-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+/* Styling for the Welcome message */
+.welcome-message {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333; /* Darker text */
+  margin: 0;
+}
+
+/* Styling for the Ask Question button link */
+.ask-button-link {
+  text-decoration: none;
+}
+
+/* Styling for the Ask Question button */
+.ask-button {
+  background-color: #243447; /* Blue background */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ask-button:hover {
+  background-color: #4b4bdf; /* Slightly darker blue on hover */
+}
+
+/* Styling for the "Questions" heading */
+.questions-section {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+/* Styling for the list of questions (where QuestionCard components will reside) */
+.question-list {
+  /* No specific styling needed here unless you want to add a border or background to the list itself */
+}
+
+/* Note: QuestionCard styling should be in its own CSS file, but
+   you may need to ensure it has a bottom border and proper padding
+   to look like the rows in the image.
+*/

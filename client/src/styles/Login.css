@@ -1,0 +1,191 @@
+/* You can copy and paste the entire content of Register.css here, 
+   but change the main container class to target the Login component */
+
+/* Base styles to match the page background/layout in the image */
+.login-page-container {
+  display: flex;
+  padding: 80px 10%; /* Adjust padding as needed to position content */
+  gap: 50px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%); /* Light gradient background */
+}
+
+/* --- Form Area Styling (Left Side) --- */
+.login-form-area {
+  flex: 1; /* Takes up one portion of the flex container */
+  display: flex;
+  justify-content: flex-end; /* Align the card to the right side of its area */
+  position: relative;
+}
+
+.auth-form-card {
+  background: white;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px; /* Set a max width for the form card */
+}
+
+.form-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.already-account {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.signin-link {
+  color: #3877ff; /* Blue link color */
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* --- Form Input Styling --- */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  margin-bottom: 0;
+  position: relative; /* For password toggle */
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box; /* Include padding in width */
+}
+
+.form-input::placeholder {
+  color: #aaa;
+}
+
+/* Password Toggle Styling */
+.password-group {
+  display: flex;
+  align-items: center;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+  font-size: 1.1rem;
+}
+
+
+/* --- Submit Button Styling --- */
+.submit-btn {
+  background-color: #5d5dff; /* Blue button color */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px; /* Space above button */
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #4b4bdf;
+}
+
+/* --- Bottom Link --- */
+.already-account-bottom {
+    text-align: center;
+    margin-top: 20px;
+}
+.already-account-bottom a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+
+/* --- About Section Styling (Right Side) --- */
+.about-section {
+  flex: 1; /* Takes up one portion of the flex container */
+  padding-left: 50px;
+  border-left: 1px solid #eee; /* A subtle separator */
+  max-width: 400px;
+}
+
+.about-title {
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  color: #777;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
+}
+
+.qa-network-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.how-it-works-btn {
+  background-color: #f7a53e; /* Orange button color */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.how-it-works-btn:hover {
+  background-color: #e5942d;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .login-page-container {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+
+  .login-form-area {
+    justify-content: center;
+  }
+
+  .auth-form-card,
+  .about-section {
+    max-width: 100%;
+  }
+
+  .about-section {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 30px;
+    margin-top: 30px;
+    border-top: 1px solid #eee;
+  }
+}

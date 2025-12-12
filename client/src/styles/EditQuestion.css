@@ -1,0 +1,51 @@
+.edit-question-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 25px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.12);
+}
+
+.edit-question-container h1 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.edit-question-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-question-form label {
+  font-weight: 600;
+}
+
+.edit-question-form input,
+.edit-question-form textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  resize: none;
+}
+
+.save-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.save-btn:hover {
+  background-color: #0056b3;
+}

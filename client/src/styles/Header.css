@@ -1,0 +1,101 @@
+/* ============ HEADER BASE ============ */
+.header {
+  background: linear-gradient(90deg, #1e2a38, #243447);
+  padding: 14px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* ============ LAYOUT ============ */
+.header-container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ============ LOGO ============ */
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #f2f4f8;
+  text-decoration: none;
+  letter-spacing: 0.6px;
+}
+
+.logo:hover {
+  color: #4c8bf5;
+}
+
+/* ============ NAVIGATION ============ */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #d9dee5;
+  font-size: 1rem;
+  padding: 6px 8px;
+  transition: color 0.25s ease, opacity 0.25s ease;
+}
+
+.nav-link:hover {
+  color: #4c8bf5;
+  opacity: 0.9;
+}
+
+/* ============ REGISTER BUTTON ============ */
+.register-btn {
+  background: #4c8bf5;
+  color: white;
+  padding: 7px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.25s ease, transform 0.2s ease;
+}
+
+.register-btn:hover {
+  background: #3c75d9;
+  transform: translateY(-2px);
+}
+
+/* ============ LOGOUT BUTTON ============ */
+.logout-btn {
+  padding: 7px 14px;
+  border-radius: 6px;
+  background: transparent;
+  border: 1px solid #e35b5b;
+  color: #e35b5b;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.logout-btn:hover {
+  background: #e35b5b;
+  color: #ffffff;
+}
+
+/* ============ RESPONSIVE ============ */
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+}
